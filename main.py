@@ -10,7 +10,7 @@ load_dotenv()
 app_id= (os.getenv('APP_ID'))
 app_hash = os.getenv('APP_HASH')
 session_string=os.getenv('SESSION_STRING')
-mummy_no = "+2349138305164"
+mummy_no = "+"
 message = f"Good Morning Ma. Welcome to {date.today()} I hope you had a good night sleep"
 
 def prepare_message():
