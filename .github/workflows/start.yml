@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - setup-python@v4
+      - setup: python@v4
       - run: pip install telethon
       - name: Run script
         env:
