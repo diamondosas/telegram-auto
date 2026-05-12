@@ -1,5 +1,6 @@
 import os
 from datetime import date
+import time
 
 import requests
 from dotenv import load_dotenv
@@ -25,7 +26,11 @@ def prepare_message():
         message += f"\n**Quote of the day**\n{data[0]['q']} - {data[0]['a']} "
         print("Quote Fetched")
     else:
+        time.sleep(5)
         print("Failed to fetch quote")
+        print("Trying to fetch message again")
+        prepare_message()
+        
 
 
 def main():
